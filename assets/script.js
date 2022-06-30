@@ -4,9 +4,6 @@ var submitbtn = document.getElementById("submit-btn");
 var locationInput = document.getElementById('location-picker').value
 var apiKey = "9d6d726976e0cc201f3a3282e336e374"
 
-//var weatherURL = "https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}"
-//var weatherVerification ="&appid={9d6d726976e0cc201f3a3282e336e374}"
-
     function fetchWeatherData () { //retrieves user input and attaches it to url as a query string
         var locationInputWeather = document.getElementById('location-picker').value 
         var locationURLWeather = weatherURL.concat(locationInputWeather) + "&Appid=" + apiKey + "&units=imperial"
@@ -44,7 +41,6 @@ var apiKey = "9d6d726976e0cc201f3a3282e336e374"
           iconimport = iconURL.concat(icon)
           weatherIcon.setAttribute("src" , iconimport+".png")
           weatherIcon.classList.add("weather-icon");
-        console.log(data);
         weatheryContainer.append(weatherLocationName, weatherDate, weatherCurrentTemp, weatherHumidity, weatherMaxTemp, weatherMinTemp)
         weatheryContainer.append(weatherIcon)
       

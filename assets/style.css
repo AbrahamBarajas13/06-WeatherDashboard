@@ -31,8 +31,8 @@ html{
   }
   
   .main {
-    margin-left: 25%; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
+    margin-left: 25%; 
+    font-size: 28px; 
     padding: 0px 10px;
   }
   
